@@ -1,0 +1,39 @@
+// function nextSmaller(n) {
+//   //If the second to last digit of the number is greater than the last digit AND 2nd to last digit isn't 0
+//   if ((Math.floor((n/10)%10))>(Math.floor(n%10)) && (Math.floor((n/10)%10) != 0)) {
+//     let lastDigit = (Math.floor(n%10));
+//     let secondLastDigit = Math.floor((n/10)%10);
+//     console.log(lastDigit + "and second to last dig" + secondLastDigit);
+//     return((n-secondLastDigit*10-lastDigit)+lastDigit*10+secondLastDigit);
+//   }
+//   if (Math.floor((n/10)%10) === 0) return "hey";
+//   return 0;
+// }
+
+
+//could iterate through each set of 2 dig, compare, save digits into array.  When earlier digit is > than later digit,
+// can find next smallest to switch with that val for each digit??    1435 --> 1354
+
+// function nextSmaller(n) {
+// console.log(n);
+//   let lastDigit = (Math.floor(n%10));
+//   let secondLastDigit = Math.floor((n/10)%10);
+//   //If the second to last digit of the number is greater than the last digit AND 2nd to last digit isn't 0
+//   if (secondLastDigit>lastDigit && secondLastDigit != 0) {
+//     return((n-secondLastDigit*10-lastDigit)+lastDigit*10+secondLastDigit);
+//   }
+//   if (Math.floor((n/10)%10) === 0) return "hey";
+//   return 0;
+// }
+
+function nextSmaller(n) {
+  console.log(n);
+  let stringArray = n.toString().split('');
+  console.log(stringArray);
+  let numMap = stringArray.map(Number);
+  console.log(numMap);
+
+
+
+
+}
